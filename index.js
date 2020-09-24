@@ -1,12 +1,19 @@
 // array of questions for user
 const questions = [
   "What is the name of your app?",
-  "What is the goal of the app?",
+  "What is a brief description of the app?",
   "What technologies were used to develop the app?",
+  "Do I need to do anything to setup to run to app?",
   "How do I run the app?",
+  "Any other contributors to accredit?",
+  "What license would you like to include?",
+  "What is your email address?",
+  "What is your github username?",
+  "Are there any tests to run to test functionality or troubleshoot",
 ];
 var fs = require("fs");
 var inquirer = require("inquirer");
+var generateMarkdown = require("./generateMarkdown.js");
 
 // function to write README file
 function writeToFile(fileName, data) {
@@ -18,7 +25,7 @@ function writeToFile(fileName, data) {
   //       console.log("success");
   //     });
   //   }
-  fs.appendFile(fileName, data, function (error) {
+  fs.writeFile(fileName, data, function (error) {
     if (error) {
       console.log("please enter valid data");
     }
@@ -33,12 +40,12 @@ function init() {
       {
         type: "input",
         message: questions[0],
-        name: "name",
+        name: "title",
       },
       {
         type: "input",
         message: questions[1],
-        name: "goal",
+        name: "description",
       },
       {
         type: "checkbox",
@@ -59,17 +66,48 @@ function init() {
         message: questions[3],
         name: "setup",
       },
+      {
+        type: "input",
+        message: questions[4],
+        name: "run",
+      },
+      {
+        type: "input",
+        message: questions[5],
+        name: "credit",
+      },
+      {
+        type: "list",
+        message: questions[6],
+        name: "license",
+        choices: [
+          "MIT",
+          "BSD-3",
+          "Apache",
+          "Creative Commons",
+          "GNU",
+          "IBM",
+          "ISC",
+        ],
+      },
+      {
+        type: "input",
+        message: questions[7],
+        name: "email",
+      },
+      {
+        type: "input",
+        message: questions[8],
+        name: "github",
+      },
+      {
+        type: "input",
+        message: questions[9],
+        name: "tests",
+      },
     ])
     .then(function (data) {
-      //   console.log(data);
-
-      writeToFile("readme.md", JSON.stringify(data));
-      //   fs.appendFile("readme.md", JSON.stringify(data), function (error) {
-      //     if (error) {
-      //       console.log("please enter valid data");
-      //     }
-      //     console.log("success");
-      //   });
+      writeToFile("ReadMe.md", generateMarkdown(data));
     });
 }
 

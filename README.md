@@ -1,26 +1,30 @@
 # ReadMe Generator
   
   ## Description
-  A simple command line application to quickly and easily generate a quality ReadMe for your project
+  A simple command line prompt application to generate a professional ReadMe for your project or application.
 
   ## Table of contents
   * [Description](#Description)
   * [Installation](#Installation)
   * [Usage](#Usage)
   * [License](#License)
+  * [Technologies](#Technologies)
   * [Contributors](#Contributors)
   * [Tests](#Tests)
   * [Questions](#Questions)
 
   ## Installation
-  In the project directory, run "npm i" to download the necessary dependencies
+  In the project folder, run "npm i"
 
 
   ## Usage
-  In the project directory, run "node index.js" to start the prompts
+  In the project folder, run "node index.js"
 
   ## License
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+  #  Technologies
+  JavaScript,node.JS
 
   ## Contributors
   None
@@ -29,5 +33,5 @@
   None
 
   ## Questions
-  siegelal@protonmail.com [link to github page](https://www.github.com/siegelal7)
+  siegelal@protonmail.com [Github page](https://www.github.com/siegelal7)
   

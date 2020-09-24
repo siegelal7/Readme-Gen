@@ -33,6 +33,7 @@ function generateMarkdown(data) {
   * [Installation](#Installation)
   * [Usage](#Usage)
   * [License](#License)
+  * [Technologies](#Technologies)
   * [Contributors](#Contributors)
   * [Tests](#Tests)
   * [Questions](#Questions)
@@ -47,6 +48,9 @@ function generateMarkdown(data) {
   ## License
   ${licenseBadge}
 
+  #  Technologies
+  ${data.tech}
+
   ## Contributors
   ${data.credit}
 
@@ -54,7 +58,7 @@ function generateMarkdown(data) {
   ${data.tests}
 
   ## Questions
-  ${data.email} [link to github page](https://www.github.com/${data.github})
+  ${data.email} [Github page](https://www.github.com/${data.github})
   `;
 }
 

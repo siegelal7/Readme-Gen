@@ -1,7 +1,7 @@
 # ReadMe Generator
   
   ## Description
-  A simple command line application to generate a professional ReadMe for your project or application.
+  A simple command line interface to generate a quality, professsional ReadMe for your project or application.
 
   ## Table of contents
   * [Description](#Description)
@@ -9,24 +9,24 @@
   * [Usage](#Usage)
   * [License](#License)
   * [Technologies](#Technologies)
-  * [Contributors](#Contributors)
+  * [Contribution](#Contribution)
   * [Tests](#Tests)
   * [Questions](#Questions)
 
   ## Installation
-  In the project directory, run the command "npm i" to install the necessary dependencies.
+  In the project directory, run "npm i" to install dependencies.
 
 
   ## Usage
-  In the project directory, run the command "node index.js" to begin the prompts.
+  In the project directory, run "node index.js" to run the prompts.
 
   ## License
-  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+  [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
   #  Technologies
   JavaScript,node.JS
 
-  ## Contributors
+  ## Contribution
   None
 
   ## Tests 

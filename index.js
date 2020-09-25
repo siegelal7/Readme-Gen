@@ -5,7 +5,7 @@ const questions = [
   "What technologies were used to develop the app?",
   "Do I need to do anything to setup to run to app?",
   "How do I run the app?",
-  "Any other contributors to accredit?",
+  "Any contribution guidelines?",
   "What license would you like to include?",
   "What is your email address?",
   "What is your github username?",

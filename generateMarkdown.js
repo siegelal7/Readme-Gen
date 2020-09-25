@@ -34,7 +34,7 @@ function generateMarkdown(data) {
   * [Usage](#Usage)
   * [License](#License)
   * [Technologies](#Technologies)
-  * [Contributors](#Contributors)
+  * [Contribution](#Contribution)
   * [Tests](#Tests)
   * [Questions](#Questions)
 
@@ -51,7 +51,7 @@ function generateMarkdown(data) {
   #  Technologies
   ${data.tech}
 
-  ## Contributors
+  ## Contribution
   ${data.credit}
 
   ## Tests 
